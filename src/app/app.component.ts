@@ -45,4 +45,8 @@ export class AppComponent {
   {
     this.disable===true ? this.disable = false : this.disable = true;
   }
+
+  // If else in angular.
+  show = "prince";  
+
 }
