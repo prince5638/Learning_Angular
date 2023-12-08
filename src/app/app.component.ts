@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Angular';
   name = "Prince Changani";
+  getName(firstName:string, lastName:string)
+  {
+    alert("full name is: "+ firstName + " " + lastName);
+  }
 }
