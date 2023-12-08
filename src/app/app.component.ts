@@ -47,6 +47,10 @@ export class AppComponent {
   }
 
   // If else in angular.
-  show = "prince";  
+  show:boolean = true;  
 
+  hideShow()
+  {
+    this.show === true ? this.show = false : this.show = true;
+  }
 }

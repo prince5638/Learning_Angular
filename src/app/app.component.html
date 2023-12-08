@@ -57,7 +57,7 @@
 <!-- ----------------------------------------------------------------------------------------------------------------------------- -->
 <h1>If else condition in Angular</h1>
 
-<h3 *ngIf="show=='prince' then ifBlock else elseBlock"></h3>
+<h3 *ngIf="show===true; then ifBlock else elseBlock"></h3>
 
 <ng-template #ifBlock>
     <h3>If Condition</h3>
@@ -66,5 +66,7 @@
 <ng-template #elseBlock>
     <h3>Else Condition!</h3>
 </ng-template>
+
+<button (click)="hideShow()">Toggel</button>
 <hr>
 <!-- ----------------------------------------------------------------------------------------------------------------------------- -->
