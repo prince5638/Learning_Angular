@@ -6,3 +6,22 @@
 <app-login></app-login>
 
 <button (click)="getName('Prince','Changani')">Click</button>
+<br><br>
+<input type="text" #boxInpt placeholder="Key up event" (keyup)="getValue(boxInpt.value)"/>
+<br><br>
+<input type="text" #boxInpt1 placeholder="Key down event" (keydown)="getValue(boxInpt1.value)"/>
+<br><br>
+<input type="text" #boxInpt2 placeholder="Blur event" (blur)="getValue(boxInpt2.value)"/>
+<br><br>
+<h2 (mouseover)="getValue('Mouse Over h2')">Code Step By Step</h2>
+<h2 (mouseleave)="getValue('Mouse leave h2')">Code Step By Step</h2>
+
+<h3>Get value through input</h3>
+<!-- <input type="text" name="user name" placeholder="Enter user name" id="user name" #box (keyup)="getUser(box.value)"> -->
+
+<h3>Get Value Through Button Click</h3>
+<input type="text" name="user name" placeholder="Enter user name" id="user name" #box >
+<button (click)="getUser(box.value)">Click</button>
+
+<br><br>
+<h3>The user name is: {{user_name}}</h3>
