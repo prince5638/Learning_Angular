@@ -40,3 +40,16 @@
 <br>
 <p>Count Value : {{count}}</p>
 <button (click)="counter('minus')">--</button>
+<!-- ----------------------------------------------------------------------------------------------------------------------------- -->
+<!-- Property Binding Works for boolean data type also -->
+<h1>Property Binding</h1>  
+<!-- <input type="text" name="user-name" placeholder="Interpolatioin" disabled={{disable}}> -->
+<br><br>
+<!-- <input type="text" name="user-number" placeholder="Property Binding" [disabled]=disable> -->
+<hr>
+<h3>disable by clicking the button</h3>
+<input type="text" name="user-name" #toggel placeholder="Interpolatioin" disabled={{disable}}>
+<br><br>
+<input type="text" name="user-number" #toggel placeholder="Property Binding" [disabled]=disable>
+&nbsp;
+<button (click)="inputDisable()">Disable</button>

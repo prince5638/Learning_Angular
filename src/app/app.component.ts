@@ -25,7 +25,7 @@ export class AppComponent {
   count:number = 0;
   counter(sign:string)
   {
-    // using if else
+    // using if else.
     // if(sign==="add")
     // {
     //   this.count++;
@@ -34,6 +34,15 @@ export class AppComponent {
     //   this.count--;
     // }
 
+    // Using ternary operator.
     sign === 'add' ? this.count++ : this.count--;
+  };
+
+  // Property binding.
+  disable:boolean = false;
+
+  inputDisable()
+  {
+    this.disable===true ? this.disable = false : this.disable = true;
   }
 }
