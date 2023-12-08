@@ -12,14 +12,28 @@ export class AppComponent {
   getName(firstName:string, lastName:string)
   {
     alert("full name is: "+ firstName + " " + lastName);
-  }
+  };
   getValue(value:string)
   {
     console.warn(value);
-  }
+  };
   getUser(value:string)
   {
     console.log("The user name is: " + value);
     this.user_name = value;
+  };
+  count:number = 0;
+  counter(sign:string)
+  {
+    // using if else
+    // if(sign==="add")
+    // {
+    //   this.count++;
+    // }
+    // else{
+    //   this.count--;
+    // }
+
+    sign === 'add' ? this.count++ : this.count--;
   }
 }

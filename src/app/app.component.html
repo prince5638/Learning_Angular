@@ -1,21 +1,29 @@
 <h1 class="{{title}}">Hello, {{name}}</h1>
+<hr>
+<!-- ----------------------------------------------------------------------------------------------------------------------------- -->
 <app-users-list></app-users-list>  <!-- user-list component with the inline style -->
 <app-students-list></app-students-list> <!-- user-list component with the inline template -->
 <app-country-list></app-country-list>  <!-- user-list component with the inline style and inline template -->
-
+<hr>
+<!-- ----------------------------------------------------------------------------------------------------------------------------- -->
 <app-login></app-login>
 
 <button (click)="getName('Prince','Changani')">Click</button>
 <br><br>
+<hr>
+<!-- ----------------------------------------------------------------------------------------------------------------------------- -->
 <input type="text" #boxInpt placeholder="Key up event" (keyup)="getValue(boxInpt.value)"/>
 <br><br>
 <input type="text" #boxInpt1 placeholder="Key down event" (keydown)="getValue(boxInpt1.value)"/>
 <br><br>
 <input type="text" #boxInpt2 placeholder="Blur event" (blur)="getValue(boxInpt2.value)"/>
-<br><br>
+<br>
+<hr>
+<!-- ----------------------------------------------------------------------------------------------------------------------------- -->
 <h2 (mouseover)="getValue('Mouse Over h2')">Code Step By Step</h2>
 <h2 (mouseleave)="getValue('Mouse leave h2')">Code Step By Step</h2>
-
+<hr>
+<!-- ----------------------------------------------------------------------------------------------------------------------------- -->
 <h3>Get value through input</h3>
 <!-- <input type="text" name="user name" placeholder="Enter user name" id="user name" #box (keyup)="getUser(box.value)"> -->
 
@@ -25,3 +33,10 @@
 
 <br><br>
 <h3>The user name is: {{user_name}}</h3>
+<hr>
+<!-- ----------------------------------------------------------------------------------------------------------------------------- -->
+<h1>{{title}}</h1>
+<button (click)="counter('add')">++</button>
+<br>
+<p>Count Value : {{count}}</p>
+<button (click)="counter('minus')">--</button>
