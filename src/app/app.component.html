@@ -95,8 +95,15 @@
 
 <ul *ngFor="let user of user_details">
     <li>Name : {{user.name}}</li>
-    <li>Name : {{user.email}}</li>
+    <li>email : {{user.email}}</li>
+    <li>Social Media Accounts</li>
     <ul *ngFor="let accounts of user.socialAccounts">
         <li>{{accounts}}</li>
     </ul>
 </ul>
+<hr>
+<!-- ----------------------------------------------------------------------------------------------------------------------------- -->
+<h1 [style.color]="'green'">Style Binding</h1>
+
+<h1 [style.color]="colorh" [style.background-color]="bgcolor">Changing color of heading with button</h1>
+<button (click)="changeColor()">Change</button>

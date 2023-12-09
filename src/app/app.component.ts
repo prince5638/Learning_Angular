@@ -67,4 +67,13 @@ export class AppComponent {
       name: "smit", email: "smitborsadiya@gmail.com", socialAccounts: ['facebook', 'insta', 'Gmail']
     }
   ]
+
+  // style binding
+  colorh = "orange";
+  bgcolor = "brown";
+  changeColor()
+  {
+    this.colorh="brown"
+    this.bgcolor="orange"
+  }
 }
