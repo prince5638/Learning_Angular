@@ -53,4 +53,18 @@ export class AppComponent {
   {
     this.show === true ? this.show = false : this.show = true;
   }
+
+  // else if condition 
+  color:string = "red";
+
+  // for loop 
+  user_names = ['prince', 'smit', 'kuldeep', 'meet', 'yug'];
+  user_details = [
+    {
+      name: "prince", email: "princechangani@gmail.com", socialAccounts: ['insta', 'facebook', 'Gmail', 'LinkedIn']
+    },
+    {
+      name: "smit", email: "smitborsadiya@gmail.com", socialAccounts: ['facebook', 'insta', 'Gmail']
+    }
+  ]
 }
