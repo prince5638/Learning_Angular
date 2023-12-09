@@ -76,4 +76,11 @@ export class AppComponent {
     this.colorh="brown"
     this.bgcolor="orange"
   }
+
+  // Toggle Element
+  display:boolean = true; 
+  toggle()
+  {
+    this.display = !this.display;
+  }
 }

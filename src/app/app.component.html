@@ -109,3 +109,13 @@
 
 <h1 [style.color]="colorh" [style.background-color]="bgcolor">Changing color of heading with button</h1>
 <button (click)="changeColor()">Change</button>
+<hr>
+<!-- ----------------------------------------------------------------------------------------------------------------------------- -->
+<h1>Toggle Element</h1>
+<div *ngIf="display">
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quisquam magni voluptates quibusdam est, ratione ipsum fuga praesentium facilis veritatis provident delectus similique rerum iusto, aperiam, id ea ipsa quo officiis velit laborum dicta laudantium.
+    </p>
+</div>
+<button (click)="toggle()">Toggle</button>
