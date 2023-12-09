@@ -1,1 +1,16 @@
-<h2>User-Auth Module => login component works!</h2>
+<h2>Login Form</h2>
+<form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
+    <input type="text" ngModel name="user" placeholder="Enter User Name">
+    <br><br>
+    <input type="text" ngModel name="email" placeholder="Enter User Email">
+    <br><br>
+    <input type="text" ngModel name="password" placeholder="Enter User Password">
+    <br><br>
+    <button>Register</button>
+</form>
+
+<ul>
+    <li>{{userData.user}}</li>
+    <li>{{userData.email}}</li>
+    <li>{{userData.password}}</li>
+</ul>
