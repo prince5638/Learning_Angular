@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { UsersListComponent } from './users-list/users-list.component';
 import { StudentsListComponent } from './students-list/students-list.component';
 import { CountryListComponent } from './country-list/country-list.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { CountryListComponent } from './country-list/country-list.component';
     UsersListComponent,
     StudentsListComponent,
     CountryListComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

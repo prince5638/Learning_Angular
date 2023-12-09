@@ -1,0 +1,25 @@
+img {
+    width: 70px;
+}
+
+nav{
+    background-color: aquamarine;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px;
+    font-weight: bold;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+}
